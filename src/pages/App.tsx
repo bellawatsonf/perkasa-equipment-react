@@ -1,10 +1,10 @@
-import { useState } from "react";
+// import { useState } from "react";
 import HeaderView from "../components/Header";
-import { Button, Carousel } from "antd";
+import { Button } from "antd";
 import img1 from "../assets/Maskgroup.svg";
 import img2 from "../assets/Maskgroup2.svg";
-import img3 from "../assets/Sectionlast.jpg";
-import alat1 from "../assets/gambar1.svg";
+// import img3 from "../assets/Sectionlast.jpg";
+// import alat1 from "../assets/gambar1.svg";
 import Slider from "react-slick";
 import Footer from "../components/Footer";
 import alat from "../assets/Rectangle2.svg";
@@ -16,7 +16,7 @@ import client5 from "../assets/20200224151642_55712.svg";
 import client6 from "../assets/logo200.svg";
 
 function App() {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: false,
     speed: 500,

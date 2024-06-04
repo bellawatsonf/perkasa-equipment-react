@@ -1,52 +1,52 @@
-import { Card, List, Space } from "antd";
+// import { Card, List, Space } from "antd";
 import HeaderView from "../components/Header";
 import Footer from "../components/Footer";
 import alat1 from "../assets/Rectangle2.svg";
 
 export default function AlatBerat() {
-  let data = [
-    {
-      name: "",
-      weight: "",
-      apacity: "",
-      rated: "",
-    },
-    {
-      name: "",
-      weight: "4950kg ",
-      apacity: "0.16m3",
-      model: "Kubota V2203-M-E3-BM-SG1",
-      rated: "28.8 (39.2) @2250",
-    },
-    {
-      name: "U50-5",
-      weight: "4950kg ",
-      apacity: "0.16m3",
-      model: "Kubota V2203-M-E3-BM-SG1",
-      rated: "28.8 (39.2) @2250",
-    },
-    {
-      name: "U50-5",
-      weight: "4950kg ",
-      apacity: "0.16m3",
-      model: "Kubota V2203-M-E3-BM-SG1",
-      rated: "28.8 (39.2) @2250",
-    },
-    {
-      name: "U50-5",
-      weight: "4950kg ",
-      apacity: "0.16m3",
-      model: "Kubota V2203-M-E3-BM-SG1",
-      rated: "28.8 (39.2) @2250",
-    },
-    {
-      name: "U50-5",
-      weight: "4950kg ",
-      apacity: "0.16m3",
-      model: "Kubota V2203-M-E3-BM-SG1",
-      rated: "28.8 (39.2) @2250",
-    },
-  ];
+  // let data = [
+  //   {
+  //     name: "",
+  //     weight: "",
+  //     apacity: "",
+  //     rated: "",
+  //   },
+  //   {
+  //     name: "",
+  //     weight: "4950kg ",
+  //     apacity: "0.16m3",
+  //     model: "Kubota V2203-M-E3-BM-SG1",
+  //     rated: "28.8 (39.2) @2250",
+  //   },
+  //   {
+  //     name: "U50-5",
+  //     weight: "4950kg ",
+  //     apacity: "0.16m3",
+  //     model: "Kubota V2203-M-E3-BM-SG1",
+  //     rated: "28.8 (39.2) @2250",
+  //   },
+  //   {
+  //     name: "U50-5",
+  //     weight: "4950kg ",
+  //     apacity: "0.16m3",
+  //     model: "Kubota V2203-M-E3-BM-SG1",
+  //     rated: "28.8 (39.2) @2250",
+  //   },
+  //   {
+  //     name: "U50-5",
+  //     weight: "4950kg ",
+  //     apacity: "0.16m3",
+  //     model: "Kubota V2203-M-E3-BM-SG1",
+  //     rated: "28.8 (39.2) @2250",
+  //   },
+  //   {
+  //     name: "U50-5",
+  //     weight: "4950kg ",
+  //     apacity: "0.16m3",
+  //     model: "Kubota V2203-M-E3-BM-SG1",
+  //     rated: "28.8 (39.2) @2250",
+  //   },
+  // ];
   return (
     <>
       <HeaderView />

@@ -1,32 +1,34 @@
-import React, { useEffect, useState } from "react";
+/* eslint-disable prefer-const */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { useEffect, useState } from "react";
 import {
-  AppstoreOutlined,
-  MailOutlined,
+  // AppstoreOutlined,
+  // MailOutlined,
   MenuOutlined,
-  SettingOutlined,
+  // SettingOutlined,
 } from "@ant-design/icons";
-import type { MenuProps } from "antd";
-import { Menu } from "antd";
+// import type { MenuProps } from "antd";
+// import { Menu } from "antd";
 import logo from "../assets/logo.svg";
 import { useNavigate } from "react-router-dom";
 
-type MenuItem = Required<MenuProps>["items"][number];
-const items: MenuItem[] = [
-  {
-    label: "Navigation One",
-    key: "mail",
-    icon: <MailOutlined />,
-  },
-];
+// type MenuItem = Required<MenuProps>["items"][number];
+// const items: MenuItem[] = [
+//   {
+//     label: "Navigation One",
+//     key: "mail",
+//     icon: <MailOutlined />,
+//   },
+// ];
 export default function HeaderView() {
-  const [current, setCurrent] = useState("mail");
+  // const [current, setCurrent] = useState("mail");
   let navigate = useNavigate();
   const [open, setopen] = useState("open");
 
-  const onClick: MenuProps["onClick"] = (e) => {
-    console.log("click ", e);
-    setCurrent(e.key);
-  };
+  // const onClick: MenuProps["onClick"] = (e) => {
+  //   console.log("click ", e);
+  //   setCurrent(e.key);
+  // };
 
   useEffect(() => {
     console.log(open, "open");
