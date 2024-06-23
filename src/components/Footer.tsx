@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       <div className="hidden md:block">
-        <div className="bg-[url('/public/Sectionlast.jpg')] bg-cover h-[448px] w-[100%] pl-[87px]">
+        <div className="bg-[url('/Sectionlast.jpg')] bg-cover h-[448px] w-[100%] pl-[87px]">
           <div className="pt-[101px] relative z-999 max-w-[70%]">
             <p className="text-[#1D1D1D] text-[40px] font-semibold font-[Poppins] pb-[32px]">
               Tertarik untuk Bekerja Sama?
@@ -16,14 +16,16 @@ export default function Footer() {
               solusi terbaik untuk proyek Anda dengan bekerja sama dengan
               perusahaan kami.
             </p>
-            <Button className="bg-[#F4FBFF] px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[20px] border-solid border-1 border-[black]">
-              Hubungi Kami
-            </Button>
+            <a href="https://wa.me/+6281321130071" target="_blank">
+              <Button className="bg-[#F4FBFF] px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[20px] border-solid border-1 border-[black]">
+                Hubungi Kami
+              </Button>
+            </a>
           </div>
         </div>
       </div>
       <div className="block md:hidden">
-        <div className="bg-[url('/public/Sectionlast.jpg'')] bg-cover">
+        <div className="bg-[url('/Sectionlast.jpg'')] bg-cover">
           <div className="py-[40px] px-[20px]">
             <p className="text-[#1D1D1D] text-[32px] font-semibold font-[Poppins] pb-[32px]">
               Tertarik untuk Bekerja Sama?
@@ -33,9 +35,11 @@ export default function Footer() {
               solusi terbaik untuk proyek Anda dengan bekerja sama dengan
               perusahaan kami.
             </p>
-            <Button className="bg-[#FFFFF7] px-[25px] md:px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[14px] md:text-[20px] border-solid border-1 border-[black]">
-              Hubungi Kami
-            </Button>
+            <a href="https://wa.me/+6281321130071" target="_blank">
+              <Button className="bg-[#FFFFF7] px-[25px] md:px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[14px] md:text-[20px] border-solid border-1 border-[black]">
+                Hubungi Kami
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -57,15 +61,19 @@ export default function Footer() {
             <div>
               <div className="flex flex-row items-center">
                 <MailOutlined className="text-[white] text-[20px] md:text-[24px] font-bold font-[Poppins] pt-[20px] md: pt-[90px] pb-[24px] text-left pr-[16px]" />
-                <p className="text-[white] text-[16px] md:text-[24px] font-bold font-[Poppins] pt-[20px] md: pt-[90px] pb-[24px]  text-left ">
-                  perkasa.phe@gmail.com
-                </p>
+                <a href="mailto:perkasa.phe@gmail.com" target="_blank">
+                  <p className="text-[white] text-[16px] md:text-[24px] font-bold font-[Poppins] pt-[20px] md: pt-[90px] pb-[24px]  text-left ">
+                    perkasa.phe@gmail.com
+                  </p>
+                </a>
               </div>
               <div className="flex flex-row items-center">
                 <PhoneOutlined className="text-[white] text-[20px] md:text-[24px] font-bold font-[Poppins]  pb-[24px] text-left pr-[16px]" />
-                <p className="text-[white] text-[16px] md:text-[24px] font-bold font-[Poppins] pb-[24px] text-left ">
-                  0813-2113-0071
-                </p>
+                <a href="https://wa.me/+6281321130071" target="_blank">
+                  <p className="hover:cursor-pointer text-[white] text-[16px] md:text-[24px] font-bold font-[Poppins] pb-[24px] text-left ">
+                    0813-2113-0071
+                  </p>
+                </a>
               </div>
             </div>
           </div>

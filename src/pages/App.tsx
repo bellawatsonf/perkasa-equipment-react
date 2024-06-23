@@ -14,8 +14,10 @@ import client3 from "../assets/Adhi_Karya.svg";
 import client4 from "../assets/tatamulia_nusantara_indah_pt.svg";
 import client5 from "../assets/20200224151642_55712.svg";
 import client6 from "../assets/logo200.svg";
+import { useNavigate } from "react-router-dom";
 
 function App() {
+  let navigate = useNavigate();
   const settings = {
     dots: true,
     infinite: false,
@@ -53,7 +55,7 @@ function App() {
   return (
     <>
       <HeaderView />
-      <div className="max-h-[899px] bg-[url('/public/Hero.jpg')] pt-[40px] md:pt-[100px] bg-cover h-[auto] md:h-[809px]">
+      <div className="max-h-[899px] bg-[url('/Hero.jpg')] pt-[40px] md:pt-[100px] bg-cover h-[auto] md:h-[809px]">
         <div className="w-[100%] md:w-[90%] block m-auto ">
           <p className="pb-[16px] text-[#1D1D1D] text-[32px] md:text-[40px] font-bold text-center capitalize">
             Reliable Solution for Your Project
@@ -64,13 +66,18 @@ function App() {
             We present the best quality to fulfill your big projects
           </p>
           <div className="flex flex-row justify-center pb-[100px]">
+            <a href="https://wa.me/+6281321130071" target="_blank">
+              <Button
+                type="primary"
+                className="px-[25px] md:px-[32px] py-[12px] rounded-[999px] bg-[black] h-auto  mr-[24px] font-semibold text-[14px] md:text-[20px]"
+              >
+                Hubungi Kamis
+              </Button>
+            </a>
             <Button
-              type="primary"
-              className="px-[25px] md:px-[32px] py-[12px] rounded-[999px] bg-[black] h-auto  mr-[24px] font-semibold text-[14px] md:text-[20px]"
+              className="px-[25px] md:px-[32px] py-[12px] rounded-[999px] text-[black] h-auto font-semibold text-[14px] md:text-[20px]"
+              onClick={() => navigate("/alat-berat")}
             >
-              Hubungi Kami
-            </Button>
-            <Button className="px-[25px] md:px-[32px] py-[12px] rounded-[999px] text-[black] h-auto font-semibold text-[14px] md:text-[20px]">
               Lihat Alat Berat
             </Button>
           </div>
@@ -90,7 +97,10 @@ function App() {
               dan menyediakan solusi terpadu terbaik dalam kelasnya untuk
               memenuhi kebutuhan pelanggan, mulai dari layanan hingga produk.
             </p>
-            <Button className="bg-[#FFFFF7] px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[20px] border-solid border-1 border-[black]">
+            <Button
+              onClick={() => navigate("/about-us")}
+              className="bg-[#FFFFF7] px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[20px] border-solid border-1 border-[black]"
+            >
               Baca Selengkapnya
             </Button>
           </div>
@@ -132,9 +142,11 @@ function App() {
                 dengan hasil yang memuaskan, memastikan terjalinnya kemitraan
                 jangka panjang dengan setiap klien kami.
               </p>
-              <Button className="bg-[#F4FBFF] px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[20px] border-solid border-1 border-[black] justify-end">
-                Hubungi Kami
-              </Button>
+              <a href="https://wa.me/+6281321130071" target="_blank">
+                <Button className="bg-[#F4FBFF] px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[20px] border-solid border-1 border-[black] justify-end">
+                  Hubungi Kami
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -154,9 +166,11 @@ function App() {
               memuaskan, memastikan terjalinnya kemitraan jangka panjang dengan
               setiap klien kami.
             </p>
-            <Button className="bg-[#FFFFF7] px-[25px] md:px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[14px] md:text-[20px] border-solid border-1 border-[black]">
-              Hubungi Kami
-            </Button>
+            <a href="https://wa.me/+6281321130071" target="_blank">
+              <Button className="bg-[#FFFFF7] px-[25px] md:px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[14px] md:text-[20px] border-solid border-1 border-[black]">
+                Hubungi Kami
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -197,7 +211,10 @@ function App() {
             </Slider>
           </div>
         </div>
-        <Button className="mt-[80px] m-auto block bg-[#FFFFF7] px-[25px] md:px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[14px] md:text-[20px] border-solid border-1 border-[black]">
+        <Button
+          onClick={() => navigate("/alat-berat")}
+          className="mt-[80px] m-auto block bg-[#FFFFF7] px-[25px] md:px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[14px] md:text-[20px] border-solid border-1 border-[black]"
+        >
           Lihat Semua
         </Button>
       </div>
