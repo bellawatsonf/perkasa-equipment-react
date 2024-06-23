@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-[100%] bg-[url('../public/Footer.png')] bg-cover bg-no-repeat">
+      <div className="w-[100%] bg-[url('/Footer.png')] bg-cover bg-no-repeat">
         <div className="grid grid-cols-1 md:grid-cols-2 px-[20px] md:px-[80px]">
           <div className="flex justify-start pt-[20px] md:py-[60px]">
             <div className="h-[auto]">
