@@ -71,7 +71,7 @@ function App() {
                 type="primary"
                 className="px-[25px] md:px-[32px] py-[12px] rounded-[999px] bg-[black] h-auto  mr-[24px] font-semibold text-[14px] md:text-[20px]"
               >
-                Hubungi Kamis
+                Hubungi Kami
               </Button>
             </a>
             <Button
