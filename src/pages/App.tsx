@@ -156,7 +156,7 @@ function App() {
         </div>
       </div>
       <div className="block md:hidden">
-        <div className="bg-[url('oarang.png')] bg-cover">
+        <div className="bg-[url('orang.png')] bg-cover">
           <div className="py-[40px] px-[20px]">
             <p className="text-[#1D1D1D] text-[32px] font-semibold font-[Poppins] pb-[32px]">
               General Contractor
