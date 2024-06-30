@@ -23,7 +23,7 @@ import { useNavigate } from "react-router-dom";
 export default function HeaderView() {
   // const [current, setCurrent] = useState("mail");
   let navigate = useNavigate();
-  const [open, setopen] = useState("open");
+  const [open, setopen] = useState("close");
 
   // const onClick: MenuProps["onClick"] = (e) => {
   //   console.log("click ", e);
@@ -95,7 +95,7 @@ export default function HeaderView() {
         >
           <div
             style={{ transition: "0.2s", overflow: "hidden" }}
-            className="absolute z-[999] bg-[#F8F8F8] w-full h-[100vh]"
+            className="absolute z-[999] bg-[#F8F8F8] w-full h-[100000px]"
           >
             <ul className="p-[20px]">
               <li
