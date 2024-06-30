@@ -2,6 +2,10 @@
 import HeaderView from "../components/Header";
 import { Button } from "antd";
 import img1 from "../assets/Maskgroup.svg";
+import alatberat1 from "../assets/alatberat1.jpeg";
+import alatberat3 from "../assets/alatberat3.jpeg";
+import alatberat4 from "../assets/alatberat4.jpeg";
+import alatberat5 from "../assets/alatberat5.jpeg";
 import img2 from "../assets/Maskgroup2.svg";
 // import img3 from "../assets/Sectionlast.jpg";
 // import alat1 from "../assets/gambar1.svg";
@@ -183,30 +187,33 @@ function App() {
             <Slider {...settings}>
               <div>
                 <img
-                  src={alat}
-                  className="max-w-[302px] block m-[auto] block m-[auto]"
+                  src={alatberat1}
+                  className="max-w-[302px] bw-full lock m-[auto] block m-[auto] h-[300px]"
                 />
               </div>
               <div>
-                <img src={alat} className="max-w-[302px] block m-[auto]" />
+                <img
+                  src={alat}
+                  className="w-full max-w-[302px] block m-[auto] h-[300px]"
+                />
               </div>
               <div>
-                <img src={alat} className="max-w-[302px] block m-[auto]" />
+                <img
+                  src={alatberat3}
+                  className="w-full max-w-[302px] block m-[auto] h-[300px]"
+                />
               </div>
               <div>
-                <img src={alat} className="max-w-[302px] block m-[auto]" />
+                <img
+                  src={alatberat4}
+                  className="w-full max-w-[302px] block m-[auto] h-[300px]"
+                />
               </div>
               <div>
-                <img src={alat} className="max-w-[302px] block m-[auto]" />
-              </div>
-              <div>
-                <img src={alat} className="max-w-[302px] block m-[auto]" />
-              </div>
-              <div>
-                <img src={alat} className="max-w-[302px] block m-[auto]" />
-              </div>
-              <div>
-                <img src={alat} className="max-w-[302px] block m-[auto]" />
+                <img
+                  src={alatberat5}
+                  className="w-full max-w-[302px] block m-[auto] h-[300px]"
+                />
               </div>
             </Slider>
           </div>
