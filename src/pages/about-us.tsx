@@ -1,6 +1,8 @@
 // import { List } from "antd";
 import HeaderView from "../components/Header";
 import Footer from "../components/Footer";
+import { Button } from "antd";
+import { DownloadOutlined } from "@ant-design/icons";
 
 export default function AboutUs() {
   return (
@@ -12,6 +14,19 @@ export default function AboutUs() {
         </p>
       </div>
       <div className="p-[40px] md:p-[80px] bg-[#FFFFF7]">
+        <div className="flex justify-center md:justify-end mb-[20px] md:mb-[0px]">
+          <a href="https://pdflink.to/df2ede62/" target="_blank">
+            <Button
+              type="primary"
+              shape="round"
+              icon={<DownloadOutlined />}
+              size="large"
+              className="bg-[#413d84]"
+            >
+              Company Profile
+            </Button>
+          </a>
+        </div>
         <h1 className="text-[#1D1D1D] text-center text-[32px] md:text-[40px] font-semibold font-[Poppins] pb-[32px]">
           CV. Perkasa Heavy Equipment
         </h1>
