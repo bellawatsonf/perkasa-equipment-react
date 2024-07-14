@@ -2,33 +2,74 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from "react";
 import {
-  // AppstoreOutlined,
-  // MailOutlined,
+  AppstoreOutlined,
+  DownOutlined,
+  MailOutlined,
   MenuOutlined,
-  // SettingOutlined,
+  SettingOutlined,
+  UpOutlined,
 } from "@ant-design/icons";
-// import type { MenuProps } from "antd";
-// import { Menu } from "antd";
+import type { MenuProps } from "antd";
+import { Menu } from "antd";
 import logo from "../assets/logo.svg";
 import { useNavigate } from "react-router-dom";
 
-// type MenuItem = Required<MenuProps>["items"][number];
-// const items: MenuItem[] = [
-//   {
-//     label: "Navigation One",
-//     key: "mail",
-//     icon: <MailOutlined />,
-//   },
-// ];
+type MenuItem = Required<MenuProps>["items"][number];
+
+const items: MenuItem[] = [
+  {
+    label: "Navigation One",
+    key: "mail",
+    icon: <MailOutlined />,
+  },
+  {
+    label: "Navigation Two",
+    key: "app",
+    icon: <AppstoreOutlined />,
+    disabled: true,
+  },
+  {
+    label: "Navigation Three - Submenu",
+    key: "SubMenu",
+    icon: <SettingOutlined />,
+    children: [
+      {
+        type: "group",
+        label: "Item 1",
+        children: [
+          { label: "Option 1", key: "setting:1" },
+          { label: "Option 2", key: "setting:2" },
+        ],
+      },
+      {
+        type: "group",
+        label: "Item 2",
+        children: [
+          { label: "Option 3", key: "setting:3" },
+          { label: "Option 4", key: "setting:4" },
+        ],
+      },
+    ],
+  },
+  {
+    key: "alipay",
+    label: (
+      <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
+        Navigation Four - Link
+      </a>
+    ),
+  },
+];
 export default function HeaderView() {
-  // const [current, setCurrent] = useState("mail");
+  const [current, setCurrent] = useState("mail");
   let navigate = useNavigate();
   const [open, setopen] = useState("close");
+  const [show, setShow] = useState(false);
 
-  // const onClick: MenuProps["onClick"] = (e) => {
-  //   console.log("click ", e);
-  //   setCurrent(e.key);
-  // };
+  const onClick: MenuProps["onClick"] = (e) => {
+    console.log("click ", e);
+    setCurrent(e.key);
+  };
 
   useEffect(() => {
     console.log(open, "open");
@@ -39,33 +80,103 @@ export default function HeaderView() {
       <div className="hidden md:block">
         <div className="block md:flex bg-[white] w-[100%] h-auto px-[0px] md:px-[80px] py-[18px] justify-between items-center">
           <img src={logo} className="px-[20px] md:px-[0px]" />
-          <ul className="flex flex-row text-[#2F2F2F] text-[18px] font-medium leading-[32px] font-[Poppins]">
-            <li
-              className="pr-[40px] hover:cursor-pointer"
-              onClick={() => navigate("/")}
-            >
-              Beranda
-            </li>
-            <li
-              className="pr-[40px] hover:cursor-pointer"
-              onClick={() => navigate("/about-us")}
-            >
-              Tentang Kami
-            </li>
-            <li
-              className="pr-[40px] hover:cursor-pointer"
-              onClick={() => navigate("/alat-berat")}
-            >
-              Jenis Alat Berat
-            </li>
-            {/* <li className="pr-[40px] hover:cursor-pointer" onClick={()=>navigate('/')}>General Kontraktor</li> */}
-            <li
-              className="pr-[40px] hover:cursor-pointer"
-              onClick={() => navigate("/contact-us")}
-            >
-              Hubungi Kami
-            </li>
-          </ul>
+
+          {/* <nav>
+            <ul className="flex flex-row text-[#2F2F2F] text-[18px] font-medium leading-[32px] font-[Poppins]">
+              <li
+                className="pr-[40px] hover:cursor-pointer"
+                onClick={() => navigate("/")}
+              >
+                Beranda
+              </li>
+              <li
+                className="pr-[40px] hover:cursor-pointer"
+                onClick={() => navigate("/about-us")}
+              >
+                Tentang Kami
+              </li>
+              <li
+                className="pr-[40px] hover:cursor-pointer"
+                onClick={() => navigate("/alat-berat")}
+              >
+                Jenis Alat Berat
+              </li>
+              <li
+                className="pr-[40px] hover:cursor-pointer"
+                onClick={() => navigate("/alat-berat")}
+              >
+                Portofolio
+                <ul>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#">Socials</a>
+                  </li>
+                  <li>
+                    <a href="#">Reviews</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li
+                className="pr-[40px] hover:cursor-pointer"
+                onClick={() => navigate("/contact-us")}
+              >
+                Hubungi Kami
+              </li>
+            </ul>
+          </nav> */}
+          <nav>
+            <ul className="flex flex-row text-[#2F2F2F] text-[18px] font-medium leading-[32px] font-[Poppins]">
+              <li
+                className="pr-[40px] hover:cursor-pointer"
+                onClick={() => navigate("/")}
+              >
+                Beranda
+              </li>
+              <li
+                className="pr-[40px] hover:cursor-pointer"
+                onClick={() => navigate("/about-us")}
+              >
+                Tentang Kami
+              </li>
+              <li
+                className="pr-[40px] hover:cursor-pointer"
+                onClick={() => navigate("/alat-berat")}
+              >
+                Jenis Alat Berat
+              </li>
+              <li
+                className="pr-[40px] hover:cursor-pointer"
+                // onClick={() => navigate("/alat-berat")}
+              >
+                Portofolio <DownOutlined className="text-[12px] " />{" "}
+                <ul>
+                  <li>
+                    <a href="#">Portofolio Proyek</a>
+                  </li>
+                  <li>
+                    <a href="#">Potofolio Design</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li
+                className="pr-[40px] hover:cursor-pointer"
+                onClick={() => navigate("/contact-us")}
+              >
+                Hubungi Kami
+              </li>
+            </ul>
+          </nav>
+          {/* <Menu
+            onClick={onClick}
+            selectedKeys={[current]}
+            mode="horizontal"
+            items={items}
+            className="menu-custom"
+          /> */}
         </div>
       </div>
       <div className="block md:hidden">
@@ -99,7 +210,7 @@ export default function HeaderView() {
           >
             <ul className="p-[20px]">
               <li
-                className="pr-[40px] hover:cursor-pointer font-[Poppins] text-[20px] "
+                className="pr-[40px] hover:cursor-pointer font-[Poppins] text-[20px] py-[10px]"
                 onClick={() => {
                   if (open === "open") {
                     setopen("close");
@@ -110,7 +221,7 @@ export default function HeaderView() {
                 Beranda
               </li>
               <li
-                className="pr-[40px] hover:cursor-pointer font-[Poppins] text-[20px] "
+                className="pr-[40px] hover:cursor-pointer font-[Poppins] text-[20px] py-[10px]"
                 onClick={() => {
                   console.log("masuk");
 
@@ -123,7 +234,7 @@ export default function HeaderView() {
                 Tentang Kami
               </li>
               <li
-                className="pr-[40px] hover:cursor-pointer font-[Poppins] text-[20px] "
+                className="pr-[40px] hover:cursor-pointer font-[Poppins] text-[20px] py-[10px]"
                 onClick={() => {
                   if (open === "open") {
                     setopen("close");
@@ -133,9 +244,27 @@ export default function HeaderView() {
               >
                 Jenis Alat Berat
               </li>
+              <li
+                className="pr-[40px] hover:cursor-pointer font-[Poppins] text-[20px] py-[10px]"
+                onClick={() => (!show ? setShow(true) : setShow(false))}
+              >
+                Portofolio <DownOutlined className="text-[12px] " />{" "}
+                <ul
+                  className={`${
+                    show ? "block" : "hidden"
+                  } bg-[#f0f0f0] w-[auto] px-[20px] py-[10px]`}
+                >
+                  <li className="pr-[40px] hover:cursor-pointer font-[Poppins] text-[20px] pb-[10px]">
+                    <a href="#">Portofolio Proyek</a>
+                  </li>
+                  <li className="pr-[40px] hover:cursor-pointer font-[Poppins] text-[20px]">
+                    <a href="#">Potofolio Design</a>
+                  </li>
+                </ul>
+              </li>
               {/* <li className="pr-[40px] hover:cursor-pointer" onClick={()=>navigate('/')}>General Kontraktor</li> */}
               <li
-                className="pr-[40px] hover:cursor-pointer font-[Poppins] text-[20px] "
+                className="pr-[40px] hover:cursor-pointer font-[Poppins] text-[20px] py-[10px]"
                 onClick={() => {
                   if (open === "open") {
                     setopen("close");
