@@ -60,8 +60,8 @@ function App() {
     <>
       <HeaderView />
       <div className="max-h-[699px] bg-[url('/Hero.jpg')] pt-[40px] md:pt-[100px] bg-cover h-[auto] md:h-[609px]">
-        <div className="w-[100%] md:w-[90%] block m-auto ">
-          <p className="pb-[16px] text-[#1D1D1D] text-[28px] md:text-[36px] font-bold text-center capitalize">
+        <div className="w-[100%] md:w-[90%] block m-auto px-[20px] ">
+          <p className=" pb-[16px] text-[#1D1D1D] text-[28px] md:text-[36px] font-bold text-center capitalize">
             Reliable Solution for Your Project
           </p>
           <p className="pb-[40px] text-[#494949] text-[16px] md:text-[20px] font-normal text-center capitalize">
