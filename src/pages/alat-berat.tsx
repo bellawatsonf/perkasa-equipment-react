@@ -56,7 +56,7 @@ export default function AlatBerat() {
     <>
       <HeaderView />
       <div className="bg-[url('/imgaboutus.jpg')] h-[auto] md:h-[412px] px-[80px] pt-[70px] md:pt-[186px] bg-cover">
-        <p className="text-[#1D1D1D] text-[32px] md:text-[40px] font-semibold font-[Poppins] pb-[32px]">
+        <p className="text-[#1D1D1D] text-[26px] md:text-[36px] font-semibold font-[Poppins] pb-[32px]">
           ALAT BERAT
         </p>
       </div>

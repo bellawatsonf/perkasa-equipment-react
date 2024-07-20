@@ -59,12 +59,12 @@ function App() {
   return (
     <>
       <HeaderView />
-      <div className="max-h-[899px] bg-[url('/Hero.jpg')] pt-[40px] md:pt-[100px] bg-cover h-[auto] md:h-[809px]">
+      <div className="max-h-[699px] bg-[url('/Hero.jpg')] pt-[40px] md:pt-[100px] bg-cover h-[auto] md:h-[609px]">
         <div className="w-[100%] md:w-[90%] block m-auto ">
-          <p className="pb-[16px] text-[#1D1D1D] text-[32px] md:text-[40px] font-bold text-center capitalize">
+          <p className="pb-[16px] text-[#1D1D1D] text-[28px] md:text-[36px] font-bold text-center capitalize">
             Reliable Solution for Your Project
           </p>
-          <p className="pb-[40px] text-[#494949] text-[18px] md:text-[24px] font-normal text-center capitalize">
+          <p className="pb-[40px] text-[#494949] text-[16px] md:text-[20px] font-normal text-center capitalize">
             Plan for a resilient future with our heavy construction equipment.
             <br />
             We present the best quality to fulfill your big projects
@@ -73,13 +73,13 @@ function App() {
             <a href="https://wa.me/+6281321130071" target="_blank">
               <Button
                 type="primary"
-                className="px-[25px] md:px-[32px] py-[12px] rounded-[999px] bg-[black] h-auto  mr-[24px] font-semibold text-[14px] md:text-[20px]"
+                className="px-[25px] md:px-[32px] py-[12px] rounded-[999px] bg-[black] h-auto  mr-[24px] font-semibold text-[14px] md:text-[16px]"
               >
                 Hubungi Kami
               </Button>
             </a>
             <Button
-              className="px-[25px] md:px-[32px] py-[12px] rounded-[999px] text-[black] h-auto font-semibold text-[14px] md:text-[20px]"
+              className="bg-[white] px-[25px] md:px-[32px] py-[12px] rounded-[999px] bg-[black] h-auto  mr-[24px] font-semibold text-[14px] md:text-[16px]"
               onClick={() => navigate("/alat-berat")}
             >
               Lihat Alat Berat
@@ -93,17 +93,17 @@ function App() {
             <img src={img1} className="flex justify-end w-[100%]" />
           </div>
           <div className="pt-[101px]">
-            <p className="text-[#1D1D1D] text-[40px] font-semibold font-[Poppins] pb-[32px]">
+            <p className="text-[#1D1D1D] text-[36px] font-semibold font-[Poppins] pb-[32px]">
               Mengapa Memilih Kami?
             </p>
-            <p className="text-[#1D1D1D] text-[20px] font-normal font-[Poppins]  pb-[32px]">
+            <p className="text-[#1D1D1D] text-[16px] font-normal font-[Poppins]  pb-[32px] w-[70%] md:w-[50%]">
               Kami bertujuan menjadi pilihan dalam industri persewaan alat berat
               dan menyediakan solusi terpadu terbaik dalam kelasnya untuk
               memenuhi kebutuhan pelanggan, mulai dari layanan hingga produk.
             </p>
             <Button
               onClick={() => navigate("/about-us")}
-              className="bg-[#FFFFF7] px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[20px] border-solid border-1 border-[black]"
+              className="bg-[#FFFFF7] px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[14px] border-solid border-1 border-[black]"
             >
               Baca Selengkapnya
             </Button>
@@ -113,15 +113,15 @@ function App() {
       <div className="block md:hidden">
         <div className="bg-[url('Maskgroup.svg')]">
           <div className="py-[40px] pl-[20px]">
-            <p className="text-[#1D1D1D] text-[32px] font-semibold font-[Poppins] pb-[32px]">
+            <p className="text-[#1D1D1D] text-[26px] font-semibold font-[Poppins] pb-[32px]">
               Mengapa Memilih Kami?
             </p>
-            <p className="text-[#1D1D1D] text-[18px] font-normal font-[Poppins]  pb-[32px]">
+            <p className="text-[#1D1D1D] text-[16px] font-normal font-[Poppins]  pb-[32px]">
               Kami bertujuan menjadi pilihan dalam industri persewaan alat berat
               dan menyediakan solusi terpadu terbaik dalam kelasnya untuk
               memenuhi kebutuhan pelanggan, mulai dari layanan hingga produk.
             </p>
-            <Button className="bg-[#FFFFF7] px-[25px] md:px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[14px] md:text-[20px] border-solid border-1 border-[black]">
+            <Button className="bg-[#FFFFF7] px-[25px] md:px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[14px] md:text-[16px] border-solid border-1 border-[black]">
               Baca Selengkapnya
             </Button>
           </div>
@@ -134,10 +134,10 @@ function App() {
           </div>
           <div className="pt-[53px] text-right flex">
             <div className="justify-end absolute right-0 max-w-[845px] pr-[80px] ">
-              <p className="text-[#1D1D1D] text-[40px] font-semibold font-[Poppins] pb-[32px] text-right">
+              <p className="text-[#1D1D1D] text-[36px] font-semibold font-[Poppins] pb-[32px] text-right">
                 General Contractor
               </p>
-              <p className="text-[#1D1D1D] text-[20px] font-normal font-[Poppins] pb-[32px] text-right">
+              <p className="text-[#1D1D1D] text-[16px] font-normal font-[Poppins] pb-[32px] text-right">
                 General Contractor merupakan layanan utama yang kami berikan
                 kepada klien kami. Tim kami bertanggung jawab dalam setiap
                 proses pelaksanaan konstruksi dari tahap perencanaan hingga
@@ -147,7 +147,7 @@ function App() {
                 jangka panjang dengan setiap klien kami.
               </p>
               <a href="https://wa.me/+6281321130071" target="_blank">
-                <Button className="bg-[#F4FBFF] px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[20px] border-solid border-1 border-[black] justify-end">
+                <Button className="bg-[#F4FBFF] px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[16px] border-solid border-1 border-[black] justify-end">
                   Hubungi Kami
                 </Button>
               </a>
@@ -158,10 +158,10 @@ function App() {
       <div className="block md:hidden">
         <div className="bg-[url('orang.png')] bg-cover">
           <div className="py-[40px] px-[20px]">
-            <p className="text-[#1D1D1D] text-[32px] font-semibold font-[Poppins] pb-[32px]">
+            <p className="text-[#1D1D1D] text-[26px] font-semibold font-[Poppins] pb-[32px]">
               General Contractor
             </p>
-            <p className="text-[#1D1D1D] text-[18px] font-normal font-[Poppins]  pb-[32px]">
+            <p className="text-[#1D1D1D] text-[16px] font-normal font-[Poppins]  pb-[32px]">
               General Contractor merupakan layanan utama yang kami berikan
               kepada klien kami. Tim kami bertanggung jawab dalam setiap proses
               pelaksanaan konstruksi dari tahap perencanaan hingga pelaksanaan
@@ -188,7 +188,7 @@ function App() {
               <div>
                 <img
                   src={alatberat1}
-                  className="max-w-[302px] bw-full lock m-[auto] block m-[auto] h-[300px]"
+                  className="max-w-[302px] bw-full lock m-[auto] block  h-[300px]"
                 />
               </div>
               <div>
@@ -220,14 +220,14 @@ function App() {
         </div>
         <Button
           onClick={() => navigate("/alat-berat")}
-          className="mt-[80px] m-auto block bg-[#FFFFF7] px-[25px] md:px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[14px] md:text-[20px] border-solid border-1 border-[black]"
+          className="mt-[80px] m-auto block bg-[#FFFFF7] px-[25px] md:px-[32px] py-[12px] rounded-[999px] text-[black] h-auto text-[12px] md:text-[16px] border-solid border-1 border-[black]"
         >
           Lihat Semua
         </Button>
       </div>
       <div className="w-[white] px-[80px]">
         <div className="block md:flex flex-row m-auto">
-          <p className="text-center md:text-left text-[#1D1D1D] pt-[80px] text-[32px] md:text-[40px] font-semibold leading-[32px] font-[Poppins]">
+          <p className="text-center md:text-left text-[#1D1D1D] pt-[80px] text-[26px] md:text-[36px] font-semibold leading-[32px] font-[Poppins]">
             Klien Kami
           </p>
         </div>

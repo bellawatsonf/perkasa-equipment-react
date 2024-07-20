@@ -7,19 +7,19 @@ export default function ContactUs() {
     <>
       <HeaderView />
       <div className="bg-[url('/imgaboutus.jpg')] h-[auto] md:h-[412px] px-[80px] pt-[70px] md:pt-[186px] bg-cover">
-        <p className="text-[#1D1D1D] text-[32px] md:text-[40px] font-semibold font-[Poppins] pb-[32px]">
+        <p className="text-[#1D1D1D] text-[26px] md:text-[36px] font-semibold font-[Poppins] pb-[32px]">
           HUBUNGI KAMI
         </p>
       </div>
 
-      <div className="px-[20px] md:px-[80px] pt-[10px] md:pt-[80px] bg-[#F8F8F8]  ">
+      <div className="px-[20px] md:px-[80px] pt-[10px] md:pt-[50px] bg-[#F8F8F8]  ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className=" pb-[32px] px-[24px] pt-[10%] md:pt-[30%]">
+          <div className=" pb-[32px] px-[24px] pt-[5%] md:pt-[20%]">
             <img src={logo} className="hidden md:block" />
-            <p className="text-[#1D1D1D] text-[24px] font-bold font-[Poppins] py-[12px] md:py-[24px]">
+            <p className="text-[#1D1D1D] text-[20px] font-bold font-[Poppins] py-[12px] md:py-[24px]">
               CV PERKASA HEAVY EQUIPMENT
             </p>
-            <p className="text-[#1D1D1D] text-[20px] font-medium font-[Poppins] ">
+            <p className="text-[#1D1D1D] text-[16px] font-medium font-[Poppins] ">
               Jl. Mustikasari Raya No. 12 Bekasi
             </p>
           </div>
@@ -27,7 +27,7 @@ export default function ContactUs() {
           <div className="py-[32px] px-[10px] md:px-[24px]">
             <iframe
               width="100%"
-              height="600"
+              height="400"
               src="https://maps.google.com/maps?q=Jl.%20Pondasi%20No.28,%20RT.2/RW.2,%20Kayu%20Putih,%20Kec.%20Pulo%20Gadung,%20Kota%20Jakarta%20Timur,%20Daerah%20Khusus%20Ibukota%20Jakarta%2013210,%20Indonesia&t=&z=13&ie=UTF8&iwloc=&output=embed"
             ></iframe>
           </div>
