@@ -227,11 +227,11 @@ function App() {
       </div>
       <div className="w-[white] px-[80px]">
         <div className="block md:flex flex-row m-auto">
-          <p className="text-center md:text-left text-[#1D1D1D] pt-[80px] text-[26px] md:text-[36px] font-semibold leading-[32px] font-[Poppins]">
+          <p className="text-center md:text-left text-[#1D1D1D] pt-[50px] md:pt-[70px] text-[26px] md:text-[36px] font-semibold leading-[32px] font-[Poppins]">
             Klien Kami
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-2 py-[80px]">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-2 py-[50px] md:pt-[70px]">
           <div>
             <img src={client1} className="m-auto block mt-[10px] md:mt-[2px]" />
           </div>

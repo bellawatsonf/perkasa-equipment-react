@@ -28,7 +28,7 @@ export default function ContactUs() {
             <iframe
               width="100%"
               height="400"
-              src="https://maps.google.com/maps?q=Jl.%20Pondasi%20No.28,%20RT.2/RW.2,%20Kayu%20Putih,%20Kec.%20Pulo%20Gadung,%20Kota%20Jakarta%20Timur,%20Daerah%20Khusus%20Ibukota%20Jakarta%2013210,%20Indonesia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jl.%20Raya%20Mustikasari%20No.12+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             ></iframe>
           </div>
         </div>
